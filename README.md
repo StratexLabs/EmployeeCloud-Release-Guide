@@ -1,4 +1,4 @@
-## Git Workflow
+# Git Workflow
 
 ## Introduction
 
@@ -43,7 +43,7 @@ _Try to avoid using a slash ( `/` ) character in your branch names. It has cause
 
 ## Commit Conventions
 
-Generally, we follow commit conventions similar to link:http://chris.beams.io/posts/git-commit[these] with the exception of #6 on there.
+Generally, we follow commit conventions similar to link:http://chris.beams.io/posts/git-commit [these] with the exception of #6 on there.
 
 ## Dealing with Conflicts
 
@@ -54,7 +54,7 @@ We update our branches with the rebase model rather than the merge model.
 What this means is that if you have a branch with commits, it will place those commits on top of what was on master.
 This gives a good look at the history of commits in order that they were merged into the `master` branch.
 
-You can see the link:https://www.atlassian.com/git/tutorials/merging-vs-rebasing[merge vs. rebasing] article for more information on the difference between the two.
+You can see the link:https://www.atlassian.com/git/tutorials/merging-vs-rebasing [merge vs. rebasing] article for more information on the difference between the two.
 
 You can update your branch and resolve conflicts with the following steps:
 
