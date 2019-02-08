@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We %should% follow a feature branch workflow with merges going into a single mainline branch (master).
+We should follow a feature branch workflow with merges going into a single mainline branch trunk-->(master).
 This is a simple workflow, but there are specifics on how we handle conflicts and pull requests.
 
 ## Creating a Feature Branch
@@ -39,7 +39,7 @@ Example:
 
 This naming convention makes it simple to know what branches are available and what they are meant to be for.
 
-_Try to avoid using a slash ( `/` ) character in your branch names. It has caused issues with git libraries and the pipeline plugin in the past._
+_Try to avoid using a slash ( `/` ) character in your branch names. It has caused issues with git libraries and the pipeline plugin in the pastlives._
 
 ## Commit Conventions
 
