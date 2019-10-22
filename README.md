@@ -1,5 +1,5 @@
 # Git Workflow
-
+```a wip, pr<some-insane-branch-logic```
 ## Introduction
 
 We should follow a feature branch workflow with merges going into a single mainline branch trunk-->(master).
@@ -64,22 +64,17 @@ You can update your branch and resolve conflicts with the following steps:
     git status
     ```
 * Rebase with the `master` branch.
-    ```bash
-    git pull --rebase origin master
-    ```
+    ```bash git pull --rebase origin master```
 * If you have conflicts, resolve those and then add the file(s) changed.
     ```bash
     git add path/to/file/changed
     ```
 * Continue the rebase process. If more conflicts occur, repeat the previous step.
-    ```bash
-    git rebase --continue
-    ```
+    ```bash git rebase --continue```
 * Once all conflicts are resolved, you should see your latest commit message show up in the output. You should now be able to push up to your branch with the updated commits from `master`.
     ```bash
-    # Force push because the commit history has changed
-    git push -f origin your-branch-name
-    ```
+    # Force push because the commit history has changed 
+    git push -f origin your-branch-name```
 
 ### Note
 
@@ -99,16 +94,10 @@ Rather, it is revised version of the commit you want other developers to see aft
 It also keeps the commit history clean and easy to navigate.
 
 * Make your changes and add the changes to be staged for commit
-    ```bash
-    git add path/to/file/changed
-    ```
+    ```bash git add path/to/file/changed```
 * Amend your commit message so that it includes the new file changes
-    ```bash
-    git commit --amend
-    ```
+    ```bash git commit --amend```
   * That will bring up your default editor for git. Save and exit it with the same commit message unless you feel the need to modify it and add on to the body of the message.
 * Push the branch up with the modified commit
-    ```bash
-    git push -f origin your-branch-name
-    ```
+    ```bash git push -f origin your-branch-name```
 * Refresh the pull request and it should have your updated commit and files
