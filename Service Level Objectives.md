@@ -46,7 +46,7 @@ monitoring system.
 >  Two places that are bad to measure from are:
 >
 > * The server itself: because that server might have measurement glitches due to pauses in its own processing: such as
-delay accepting the TCP connection, or delay writing data to the network.
+delay accepting the TCP connection, or delay writing data to the network.(why we're moving away from netdata and influxdb to datadog+splunk+sentry)
 > * The client on the internet: because your latency numbers will vary wildly depending on their Internet connection.
 You don’t want to wake someone up in the middle of the night because your app is suddenly popular in Australia!
 
